@@ -4,7 +4,7 @@ A FastAPI-based weather monitoring service that automatically fetches weather da
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 | Technology | Purpose |
 |------------|---------|
@@ -19,7 +19,7 @@ A FastAPI-based weather monitoring service that automatically fetches weather da
 
 ---
 
-## 📁 Project Setup
+##  Project Setup
 
 ### 1. Clone or Download Project
 ```bash
@@ -61,7 +61,7 @@ python-dotenv==1.0.0
 
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 
 **Table: monitored_cities**
 ```sql
@@ -88,7 +88,7 @@ CREATE TABLE weather_history (
 
 ---
 
-## 🔴 Redis Setup
+##  Redis Setup
 
 ### Windows
 1. Download: https://github.com/microsoftarchive/redis/releases
@@ -106,7 +106,7 @@ redis-cli ping
 
 ---
 
-## 🚀 Running the FastAPI Application
+##  Running the FastAPI Application
 
 ```bash
 cd weather-monitoring-service
@@ -122,7 +122,7 @@ http://localhost:8000/docs
 
 ---
 
-## ⚙️ Running the Celery Worker
+##  Running the Celery Worker
 
 ```bash
 cd weather-monitoring-service
@@ -133,7 +133,7 @@ celery -A app.tasks.weather_tasks worker --loglevel=info --pool=solo
 
 ---
 
-## ⏰ Running the Scheduled Task
+##  Running the Scheduled Task
 
 ```bash
 cd weather-monitoring-service
@@ -144,7 +144,7 @@ celery -A app.tasks.weather_tasks beat --loglevel=info
 
 ---
 
-## 🧪 Testing the APIs
+##  Testing the APIs
 
 ### 1. Add City (POST /cities)
 ```bash
@@ -203,7 +203,7 @@ curl http://localhost:8000/cities/Mumbai/history
 
 ---
 
-## 🌐 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -215,7 +215,7 @@ curl http://localhost:8000/cities/Mumbai/history
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 weather-monitoring-service/
@@ -249,24 +249,17 @@ weather-monitoring-service/
 
 ---
 
-## ✅ Features
+## Features
 
-- ✅ Add cities with latitude/longitude
-- ✅ List all monitored cities
-- ✅ View weather history for specific cities
-- ✅ Automatic weather data collection every 1 minute
-- ✅ Clean modular architecture
-- ✅ RESTful API design
-- ✅ Swagger UI documentation
+- Add cities with latitude/longitude
+- List all monitored cities
+- View weather history for specific cities
+- Automatic weather data collection every 1 minute
+- Clean modular architecture
+- RESTful API design
+-  Swagger UI documentation
 
 ---
 
-## 📝 Notes
-
-- Weather data is fetched from Open-Meteo API (No API key required)
-- Weather codes: 0=Clear, 1-3=Partly cloudy, 45-48=Fog, 51-67=Drizzle/Rain, 71-77=Snow, 80-99=Thunderstorm
-- Celery Beat runs the weather fetch task every 1 minute
-- SQLite database is created automatically on first run
 
 
-**© 2026 Weather Monitoring Service**
