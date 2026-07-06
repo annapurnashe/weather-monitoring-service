@@ -45,7 +45,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📦 Dependency Installation
+##  Dependency Installation
 
 ### requirements.txt
 ```txt
