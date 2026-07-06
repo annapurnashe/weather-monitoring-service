@@ -26,3 +26,20 @@ class WeatherHistoryResponse(BaseModel):
     
     class Config:
         from_attributes = True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

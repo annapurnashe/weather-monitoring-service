@@ -20,3 +20,8 @@ class WeatherHistory(Base):
     wind_speed = Column(Float, nullable=False)
     weather_code = Column(Integer, nullable=False)
     fetched_at = Column(DateTime, server_default=func.now())
+
+
+
+
+
