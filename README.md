@@ -1,4 +1,4 @@
-# 🌤️ Weather Monitoring Service
+#  Weather Monitoring Service
 
 A FastAPI-based weather monitoring service that automatically fetches weather data for configured cities every minute using Celery and Redis.
 
