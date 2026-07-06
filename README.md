@@ -268,16 +268,5 @@ weather-monitoring-service/
 - Celery Beat runs the weather fetch task every 1 minute
 - SQLite database is created automatically on first run
 
----
-
-## 🤝 Support
-
-For any issues, please refer to the official documentation:
-- [FastAPI Documentation](https://fastapi.tiangolo.com/)
-- [Celery Documentation](https://docs.celeryq.dev/)
-- [Redis Documentation](https://redis.io/documentation)
-- [Open-Meteo API](https://open-meteo.com/)
-
----
 
 **© 2026 Weather Monitoring Service**
