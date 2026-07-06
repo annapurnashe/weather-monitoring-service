@@ -207,7 +207,7 @@ curl http://localhost:8000/cities/Mumbai/history
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/` | Root endpoint |
+| GET | `/` | Root endpoint |  #docs
 | GET | `/health` | Health check |
 | POST | `/cities` | Add a new city |
 | GET | `/cities` | List all cities |
