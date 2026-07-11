@@ -1,10 +1,8 @@
-# 🌤️ Weather Monitoring Service
+ Weather Monitoring Service
 
 A FastAPI-based weather monitoring service that automatically fetches weather data for configured cities every minute using Celery and Redis.
 
----
-
-## 🛠️ Technologies Used
+ Technologies Used
 
 | Technology | Purpose |
 |------------|---------|
@@ -18,8 +16,7 @@ A FastAPI-based weather monitoring service that automatically fetches weather da
 | **Pydantic** | Data Validation |
 
 ---
-
-## 📁 Project Setup
+Project Setup
 
 ### 1. Create Virtual Environment
 ```bash
@@ -55,7 +52,7 @@ python-dotenv==1.0.0
 
 ---
 
-## 🗄️ Database Schema
+ Database Schema
 
 **Table: monitored_cities**
 ```sql
@@ -82,7 +79,7 @@ CREATE TABLE weather_history (
 
 ---
 
-## 🔴 Redis Setup
+ Redis Setup
 
 ### Windows
 1. Download: https://github.com/microsoftarchive/redis/releases
@@ -100,7 +97,7 @@ redis-cli ping
 
 ---
 
-## 🚀 Running the FastAPI Application
+ Running the FastAPI Application
 
 ```bash
 cd weather_project
@@ -116,7 +113,7 @@ http://localhost:8000/docs
 
 ---
 
-## ⚙️ Running the Celery Worker
+ Running the Celery Worker
 
 ```bash
 cd weather_project
@@ -127,7 +124,7 @@ celery -A app.tasks.weather_tasks worker --loglevel=info --pool=solo
 
 ---
 
-## ⏰ Running the Scheduled Task
+Running the Scheduled Task
 
 ```bash
 cd weather_project
@@ -138,7 +135,7 @@ celery -A app.tasks.weather_tasks beat --loglevel=info
 
 ---
 
-## 🧪 Testing the APIs
+ Testing the APIs
 
 ### 1. Add City (POST /cities)
 ```bash
@@ -159,7 +156,7 @@ curl http://localhost:8000/cities/Mumbai/history
 
 ---
 
-## 🌐 API Endpoints
+API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -171,7 +168,7 @@ curl http://localhost:8000/cities/Mumbai/history
 
 ---
 
-## 📁 Project Structure
+ Project Structure
 
 ```
 weather_project/
@@ -198,18 +195,3 @@ weather_project/
 └── README.md
 ```
 
----
-
-## ✅ Features
-
-- ✅ Add cities with latitude/longitude
-- ✅ List all monitored cities
-- ✅ View weather history for specific cities
-- ✅ Automatic weather data collection every 1 minute
-- ✅ Clean modular architecture
-- ✅ RESTful API design
-- ✅ Swagger UI documentation
-
----
-
-**© 2026 Weather Monitoring Service**
